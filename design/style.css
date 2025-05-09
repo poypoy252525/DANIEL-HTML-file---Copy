@@ -16,6 +16,7 @@ body {
   background-repeat: no-repeat;
   background-attachment: fixed;
   width: 100vw;
+  overflow-x: hidden;
 }
 section {
   min-height: 100vh;
@@ -395,7 +396,7 @@ ul li a.nav-button::after {
     margin-left: 4%;
     width: 100%;
   }
-  .carousel {
+  ul.carousel {
     overflow: scroll;
   }
   .card {
@@ -479,6 +480,12 @@ ul li a.nav-button::after {
   flex-wrap: nowrap;
   padding: 10px;
   scroll-behavior: smooth;
+  width: 100%;
+  overflow: auto;
+}
+
+.wrapper .carousel::-webkit-scrollbar {
+  display: none;
 }
 
 /* Card styling */
