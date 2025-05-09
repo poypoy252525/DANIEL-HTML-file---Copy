@@ -1,21 +1,502 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-  </head>
-  <body>
-    Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum ad provident,
-    blanditiis laboriosam, aliquid iste, quos vitae doloremque deleniti sit
-    consectetur quidem voluptate id iure nemo explicabo aspernatur. Minus quod
-    dolores nesciunt, quos dignissimos reprehenderit beatae autem, cupiditate
-    delectus eveniet enim, repudiandae similique! Ratione exercitationem
-    incidunt quo. Rerum deleniti accusamus dolorum expedita, tempore ut soluta
-    quisquam perspiciatis eligendi sint! Non dicta voluptatibus architecto
-    consequuntur officiis reiciendis officia ipsum, eligendi debitis! Debitis,
-    ipsa dolore labore dolor praesentium voluptatum asperiores fugit nobis
-    eligendi, a maiores error? Harum hic ipsa, dolores nemo sunt omnis voluptate
-    dolorem minus, rerum ut magnam velit deserunt quasi.
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SGG Website</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="./design/style.css">
+  <link rel="icon" href="images/SGGlogo.png">
+  <script src="C:\Users\PC2\Downloads\DANIEL HTML file\function\app.js" defer></script>
+</head>
+<body>
+  <section>
+    <!--<h1>Reveal Elements On Scroll</h1>-->
+    <header id="home">
+      <div class="main">
+        <div class="logo">
+          <img src="images/SGGlogo.png"/>
+          <div class="menu-toggle" id="mobile-menu">
+            <div class="bar">☰</div>
+          </div>
+        </div>
+        <ul class="nav-links" id="navLinks">
+          <li class="active"><a href="#home">Home</a></li>
+          <li><a href="#About">About Us</a></li>
+          <li><a href="#Program">Programs</a></li>
+          <li><a href="../public/chart.html">Our Team & Missionaries</a></li>
+          <li><a href="#footerCon">Contact Us</a></li>
+          <li>
+            <a href="#footerCon" class="nav-button">
+              <button type="button"><span></span>DONATE US</button></a>
+          </li>
+        </ul>
+      </div>
+      <script>
+        const mobileMenu = document.getElementById('mobile-menu');
+        const navLinks = document.getElementById('navLinks');
+      
+        mobileMenu.addEventListener('click', () => {
+          navLinks.classList.toggle('active');
+          mobileMenu.classList.toggle('active');
+        });
+      </script>
+      
+    </header>
+      <div class="title">
+        <h1>SACRED GIFT OF GOD TRAINING CENTER</h1>
+        <h2><i>"Helping others reach their God-given potential"</i></h2>
+
+        <div>
+          <a href="https://forms.gle/CAvRuVp89auQsz4n8">
+          <button type="button"><span></span>REGISTER NOW</button> </a>
+        </div>
+      </div>
+  </section>
+
+  
+<!-- PROGRAM OFFERED -->
+<section id="Program"> 
+  <h2>Programs Offered</h2>
+  <div class="wrapper" style="position: relative;"> <!-- Add position: relative -->
+    <ul class="carousel">
+      <!-- Card 1 -->
+      <li class="card">
+        <img src="images/ALS-img.jpg" alt="Alternative">
+        <div class="description" style="display: none;">
+          The Department of Education's <b>Alternative Learning System (ALS)</b> is a parallel non-formal learning system for out-of-school children, youth, 
+          and adults (OSCYAs) in the Philippines. It provides an alternative pathway for individuals who have not completed basic education in the formal system. 
+          ALS aims to develop basic and functional literacy skills, offer equivalent pathways to complete basic education, and improve the quality of life for those 
+          who have limited access to formal education.
+        </div>
+      </li>
+
+      <!-- Card 2 -->
+      <li class="card">
+        <img src="images/Automotive-img.jpg" alt="Automotive">
+        <div class="description" style="display: none;">
+          <b>The AUTOMOTIVE SERVICING NCI & NCII</b> Qualification consist of competencies that
+          a person must achieve to perform pre-delivery inspection and periodic maintenance
+          of automotive parts and components.
+        </div>
+      </li>
+
+      <!-- Card 3 -->
+      <li class="card">
+        <img src="images/ComputerSys-img.jpg" alt="Computer Services">
+        <div class="description" style="display: none;">
+          <b>The COMPUTER SYSTEMS SERVICING NCII</b><br> Qualification consists of competencies
+          that must possess to enable to install and configure computers systems, set-up computer
+          networks and servers and to maintain and repair computer systems and networks.
+        </div>
+      </li>
+
+      <!-- Card 4 -->
+      <li class="card">
+        <img src="images/Bookkeeping-img.jpg" alt="Bookkeeping">
+        <div class="description" style="display: none;">
+          <b>The BOOKKEEPING NCIII</b> Qualification consists of competencies that a person
+          must achieve to enable him/her to journalize transactions, post transactions, prepare
+          trial balance, prepare financial reports and review internal control system.
+        </div>
+      </li>
+
+      <!-- Card 5 -->
+      <li class="card">
+        <img src="images/KoreanLang-img.jpg" alt="Korean Language">
+        <div class="description" style="display: none;">
+          Learning the basic <b>Korean</b> words used in daily life is one of the first steps to learning to speak Korean. 
+          Simple words like "yes" and "no" and basic greetings like "goodbye" and "see you tomorrow" are useful in everyday situations. 
+          So in this article, we'll cover the basic Korean words and phrases you must know as a beginning Korean learner.
+        </div>
+      </li>
+    </ul>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      const cards = document.querySelectorAll(".card");
+      const wrapper = document.querySelector(".wrapper");
+  
+      // Create reusable desktop dropdown box
+      const desktopDescBox = document.createElement("div");
+      desktopDescBox.id = "descBox";
+      desktopDescBox.className = "description-box";
+      wrapper.appendChild(desktopDescBox);
+  
+      let currentCard = null;
+  
+      cards.forEach(card => {
+        card.addEventListener("click", function (e) {
+          e.stopPropagation();
+  
+          const desc = card.querySelector(".description");
+          if (!desc) return;
+  
+          const descText = desc.innerHTML.trim();
+          if (!descText) return;
+  
+          const isMobile = window.innerWidth <= 768;
+  
+          // Close any existing mobile or desktop balloon
+          document.querySelectorAll(".description-balloon").forEach(el => el.remove());
+          desktopDescBox.style.display = "none";
+  
+          if (isMobile) {
+            // ---- MOBILE: insert flowing balloon after card ----
+            const mobileBalloon = document.createElement("div");
+            mobileBalloon.className = "description-balloon";
+            mobileBalloon.innerHTML = descText;
+            card.after(mobileBalloon);
+            currentCard = card;
+          } else {
+            // ---- DESKTOP: use absolute-positioned balloon ----
+            desktopDescBox.innerHTML = descText;
+            desktopDescBox.style.display = "block";
+            desktopDescBox.style.opacity = "1";
+            desktopDescBox.style.pointerEvents = "auto";
+            desktopDescBox.style.transform = "translateY(0)";
+  
+            const cardRect = card.getBoundingClientRect();
+            const wrapperRect = wrapper.getBoundingClientRect();
+            const top = cardRect.bottom - wrapperRect.top + 14;
+            const left = cardRect.left - wrapperRect.left;
+              desktopDescBox.style.width = `${cardRect.width}px`;
+              desktopDescBox.style.left = `${left}px`;
+  
+            desktopDescBox.style.top = `${top}px`;
+            desktopDescBox.style.left = `${left}px`;
+            currentCard = card;
+          }
+        
+        });
+      });
+  
+      // Hide dropdowns on outside click
+      document.addEventListener("click", function () {
+        document.querySelectorAll(".description-balloon").forEach(el => el.remove());
+        desktopDescBox.style.opacity = "0";
+        desktopDescBox.style.pointerEvents = "none";
+        desktopDescBox.style.transform = "translateY(10px)";
+        setTimeout(() => {
+          desktopDescBox.style.display = "none";
+        }, 300);
+      });
+  
+      // Optional: Reposition on resize (for desktop)
+      window.addEventListener("resize", function () {
+        if (window.innerWidth > 768 && currentCard) {
+          const desc = currentCard.querySelector(".description");
+          if (!desc) return;
+          const descText = desc.innerHTML.trim();
+          desktopDescBox.innerHTML = descText;
+  
+          const cardRect = currentCard.getBoundingClientRect();
+          const wrapperRect = wrapper.getBoundingClientRect();
+          const top = cardRect.bottom - wrapperRect.top + 10;
+          const left = cardRect.left - wrapperRect.left + cardRect.width / 2;
+  
+          desktopDescBox.style.top = `${top}px`;
+          desktopDescBox.style.left = `${left}px`;
+          desktopDescBox.style.display = "block";
+          desktopDescBox.style.opacity = "1";
+        } else {
+          desktopDescBox.style.display = "none";
+        }
+      });
+    });
+  </script>
+</section>
+
+
+  <!-- About Us Page -->
+  <section id="About">
+    <div class="aboutTitle">
+      <!--<h1>About Us</h1>-->
+    </div>
+    <div class="aboutContainer">
+      
+      <div class="aboutCon2">
+        <h2>OUR MISSION</h2>
+        <div class="about-content2">
+          <p>We are committed to provide godly and competent technicians.</p>
+        </div>
+      </div>
+      <div class="aboutCon2" id="vision">
+        <h2>OUR VISION</h2>
+        <div class="about-content2">
+          <p>We envisioned is to see an individual that was being transformed economically through steady job, a godly family and a peaceful community.</p>
+        </div>
+      </div>
+      <!-- ABOUT US CONTAINER 1 -->
+      <div class="aboutCon">
+        <div class="about-image">
+          <img src="images/bground.jpg">
+        </div>
+        <div class="about-content">
+          <h2>What is SGG?</h2>
+          <p>The Sacred Gift of God Training Center (SGG), Inc. was established as a non-stock, non-profit association in the Philippines with a dedicated service mission: 
+            to provide and operate vocational and training center, provide training for livelihood, provide technical training for automotive servicing, welding, 
+            building wiring and electrical installation, computer servicing and other technical trainings, and also provide educational assistance by providing tuition fees and 
+            transportation allowance to the qualified recipients.
+            </p>
+        </div>
+      </div>
+
+      <!-- ABOUT US CONTAINER 2 
+      <div class="aboutCon">
+        <div class="about-content">
+          <h2>...</h2>
+          <p>...</p>
+        </div>
+        <div class="about-image">
+          <img src="images/...">
+        </div>
+      </div>-->
+
+      <!-- copy and paste the ABOUT US CONTAINER1 here >> -->
+
+      <!-- ..then copy and paste the ABOUT US CONTAINER2 here >> -->
+
+    </div>
+  </section>
+  
+  <!-- Monthly HIGHLIGHTS -->
+  <section id="Resources">
+    <h1>HIGHLIGHT FOR THE MONTH OF MAY:</h1>
+
+
+    <div class="highlightCon" style="background-image: linear-gradient(to left, rgba(255, 255, 255, 1) 40%, rgba(255, 255, 255, 0) 100%), 
+      url(images/sample3-2.jpg);">
+      <div class="highlight-content">
+        <h3 class="highlight-date">May 02, 2025</h3>
+        <h2>Where Passion Meets Progress: Learning the Basics, Building the Future</h2>
+        <p>Diving into the fundamentals of both automotive and computer skills isn't just fun — 
+          it's a gateway to exciting, real-world opportunities. From understanding how engines work 
+          to exploring the logic behind computer systems, students quickly discover how these fields 
+          intersect through modern technology. This hands-on journey sparks curiosity, fosters teamwork, 
+          and builds confidence. More importantly, it inspires future learners to follow the same path — 
+          equipping themselves with the skills that could one day land them in leading companies, 
+          innovating at the cutting edge of industry.</p>
+        <button class="highlight-button">Read More!</button>
+      </div>
+    </div>
+    
+    <div class="highlightCon" style="background-image: linear-gradient(to left, rgba(255, 255, 255, 1) 40%, rgba(255, 255, 255, 0) 100%), 
+      url(images/bg.jpg);">
+      <div class="highlight-content">
+        <h3 class="highlight-date">May 03, 2025</h3>
+        <h2>Empowering Trainees Through Purposeful Instruction</h2>
+        <p>At the heart of our organization is a dedicated team of training instructors who believe 
+          in the power of hands-on learning. Through structured programs and real-world guidance, 
+          we give individuals the opportunity to explore their potential and apply their knowledge 
+          across a wide range of industries. It's more than just skill-building—it's about opening 
+          doors, building confidence, and shaping futures.</p>
+        <button class="highlight-button">Read More!</button>
+      </div>
+    </div>
+
+    <div class="highlightCon" style="background-image: linear-gradient(to left, rgba(255, 255, 255, 1) 40%, rgba(255, 255, 255, 0) 100%), 
+      url(images/auto.jpg);">
+      <div class="highlight-content">
+        <h3 class="highlight-date">May 12, 2025</h3>
+        <h2>Driving Global Opportunities Through Automotive Skills</h2>
+        <p>The automotive industry continues to grow at a rapid pace, shaping how the world moves and 
+          works. For the next generation, mastering automotive skills isn't just about turning wrenches—
+          it's about unlocking a pathway to a future full of possibilities. From local workshops to 
+          international manufacturers, skilled professionals are in high demand. As technology advances, 
+          companies are actively seeking individuals with hands-on experience and practical knowledge, 
+          opening doors to careers both at home and abroad.</p>
+        <button class="highlight-button">Read More!</button>
+      </div>
+    </div>
+
+    <div class="highlightCon" style="background-image: linear-gradient(to left, rgba(255, 255, 255, 1) 40%, rgba(255, 255, 255, 0) 100%), 
+      url(images/Automotive.jpg);">
+      <div class="highlight-content">
+        <h3 class="highlight-date">May 25, 2025</h3> <!-- Edit Date -->
+        <h2>Gear Up: Student Skills in Motion</h2> <!-- Title(Header) -->
+        <p>Our hands-on automotive training course is designed for real people with real goals—whether 
+          you're just starting out or looking to level up your skills. You'll work with experienced 
+          instructors, get under the hood of real vehicles, and learn the tools and techniques used in 
+          today's automotive industry. No fluff, just practical training that gets you job-ready. 
+          Come see what you're capable of—and drive your future forward.</p> <!-- Contents(Information) -->
+        <button class="highlight-button">Read More!</button>
+      </div>
+    </div>
+
+    <div class="slider-controls">
+      <button id="prevBtn">&laquo;</button>
+      <button id="nextBtn">&raquo;</button>
+    </div>
+
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const wordLimit = 70;
+        const paragraphs = document.querySelectorAll('.highlight-content p');
+      
+        paragraphs.forEach(paragraph => {
+          const fullText = paragraph.textContent.trim();
+          const words = fullText.split(' ');
+      
+          // Save full text into data attribute
+          paragraph.setAttribute('data-full', fullText);
+      
+          // Replace content with truncated preview
+          if (words.length > wordLimit) {
+            paragraph.textContent = words.slice(0, wordLimit).join(' ') + '...';
+          } else {
+            paragraph.textContent = fullText; // Keep full text visible if under limit
+          }
+        });
+      
+        // Read More button logic
+        const buttons = document.querySelectorAll(".highlight-button");
+      
+        buttons.forEach(button => {
+          button.addEventListener("click", function () {
+            const container = button.closest('.highlight-content');
+            const parent = button.closest('.highlightCon');
+      
+            const data = {
+              date: container.querySelector('.highlight-date').textContent,
+              title: container.querySelector('h2').textContent,
+              paragraph: parent.querySelector('p').getAttribute('data-full'), // ✅ Use only data
+              background: parent.style.backgroundImage,
+              image: parent.style.backgroundImage.match(/url\(["']?([^"')]+)["']?\)/)?.[1] || ""
+            };
+      
+            localStorage.setItem("highlightData", JSON.stringify(data));
+            window.location.href = "register.html";
+          });
+        });
+      
+        // Slider logic (keep as is)
+        const slides = document.querySelectorAll('.highlightCon');
+        let currentSlide = 0;
+      
+        function showSlide(index) {
+          slides.forEach((slide, i) => {
+            slide.classList.toggle('active', i === index);
+          });
+        }
+      
+        document.getElementById('prevBtn').addEventListener('click', () => {
+          currentSlide = (currentSlide - 1 + slides.length) % slides.length;
+          showSlide(currentSlide);
+        });
+      
+        document.getElementById('nextBtn').addEventListener('click', () => {
+          currentSlide = (currentSlide + 1) % slides.length;
+          showSlide(currentSlide);
+        });
+      
+        showSlide(currentSlide);
+      });
+      </script>
+  </section>
+
+<!-- Footer -->
+  <footer id="footerCon">
+    <div class="dContainer">
+      <div class="left">
+        <h1>Contact Us</h1>
+        
+        <div id="links">
+          <a href="https://www.facebook.com/sacredgiftofgod" class="clickable">
+            <img src="images/facebook.png" alt="icon"><p><u>SacredGiftOfGod</u></p>
+          </a>
+          <a>
+          <img src="images/number.png" alt="icon">
+          <p>Tel # 028331104<br> GLOBE | 0945-126-2853<br> SMART | 0962-076-2300</p></a>
+        </div>
+        <a href="https://www.facebook.com/sacredgiftofgod" class="logo">
+          <img src="images/SGGlogo.png">
+        </a>
+      </div>
+
+
+      <div class="mid">
+        <h1>Our Location</h1>
+        <p><img src="images/location.png" alt="icon">9001 block 6 phase 3, Villa San Isidro, <br>San Isidro, Rizal, 1860
+        </p>
+        
+        <div class="map-container">
+          <!-- Embed Google Map -->
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3858.229716724731!2d121.14088749999998!3d14.756084000000003!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3397a5b06b73d5cf%3A0xf5b7738b9d6bd62d!2sSacred%20Gift%20of%20God%20Training%20Center!5e0!3m2!1sen!2sph!4v1744003288003!5m2!1sen!2sph" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+          </iframe>
+        </div>
+      </div>
+
+
+      <div class="right">
+        <h1>Save this for Donations!</h1>
+        <!--<img src="images/sampleqr.png">-->
+        <p class="bank-info"><img src="images/bank-account-logo.png" alt="icon">Philippine Savings Bank <br>via 233330001891</p>
+        <div class="bible-verse">
+          <p>Proverbs 19:17: "Whoever is kind to the poor lends to the Lord, and he will reward them for what they have done."</p>
+        </div>
+      </div>
+      
+    </div>
+
+
+
+    <div class="fContainer">
+    <p>&copy; 2025 Your Website. All rights reserved.</p>
+  </div>
+</footer>
+
+  <script type="text/javascript">
+    window.addEventListener('scroll',reveal);
+
+    function reveal(){
+      var reveals = document.querySelectorAll('.reveal');
+
+      for(var i = 0; i < reveals.length; i++){
+
+        var windowheight = window.innerHeight;
+        var revealtop = reveals[i].getBoundingClientRect().top;
+        var revealpoint = 150;
+
+        if(revealtop < windowheight - revealpoint){
+          reveals[i].classList.add('active');
+        }
+        else{
+          reveals[i].classList.remove('active');
+        }
+      }
+    }
+  </script>
+
+<button id="backToTop" title="Go to top"><b>&#8679;</b></button>
+
+
+
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const scrollTopBtn = document.getElementById("backToTop");
+    const header = document.getElementById("home");
+
+    window.addEventListener("scroll", function () {
+      const headerBottom = header.offsetTop + header.offsetHeight;
+      if (window.scrollY > headerBottom) {
+        scrollTopBtn.style.display = "block";
+      } else {
+        scrollTopBtn.style.display = "none";
+      }
+    });
+
+    scrollTopBtn.addEventListener("click", function () {
+      window.scrollTo({
+        top: 0,
+        behavior: "smooth"
+      });
+    });
+  });
+</script>
+
   </body>
 </html>

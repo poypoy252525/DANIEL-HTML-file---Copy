@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SGG Website - Highlights</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./design/register.css">
+  <link rel="icon" href="images/SGGlogo.png">
+</head>
+<body>
+
+<!-- Header -->
+  <header>
+    <div class="headerContainer">
+      <div class="logo">
+        <img src="images/SGGlogo.png"/>
+      </div>
+        <ul>
+          <li><a href="index.html#Resources">Back to Home</a></li>
+          <!--<li><a href="index.html#Program">Program</a></li>
+          <li><a href="chart.html">People</a></li>-->
+        </ul>
+    </div>
+  </header>
+
+  <!-- Main body contents -->
+  <main>
+    <div class="container">
+      <section id="Contacts">
+        <div class="container reveal" id="con">
+          
+          <div class="aboutCon">
+            <div class="about-content">
+              <img class="float-image">
+              <h2>...</h2>
+              <p>...</p> 
+            </div>
+          </div>
+      </section>
+     
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer id="footerCon">
+    <div class="dContainer">
+      <div class="left">
+        <h1>Contact Us</h1>
+        
+        <div id="links">
+          <a href="https://www.facebook.com/sacredgiftofgod" class="clickable">
+            <img src="images/facebook.png" alt="icon"><p><u>SacredGiftOfGod</u></p>
+          </a>
+          <a>
+          <img src="images/number.png" alt="icon">
+          <p>Tel # 028331104<br> GLOBE | 0945-126-2853<br> SMART | 0962-076-2300</p></a>
+        </div>
+        <a href="https://www.facebook.com/sacredgiftofgod" class="logo">
+          <img src="images/SGGlogo.png">
+        </a>
+      
+      </div>
+      <div class="mid">
+        <h1>Our Location</h1>
+        <p><img src="images/location.png" alt="icon">9001 block 6 phase 3, Villa San Isidro, <br>San Isidro, Rizal, 1860
+        <br></p>
+        
+        <div class="map-container">
+          <!-- Embed Google Map -->
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3858.229716724731!2d121.14088749999998!3d14.756084000000003!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3397a5b06b73d5cf%3A0xf5b7738b9d6bd62d!2sSacred%20Gift%20of%20God%20Training%20Center!5e0!3m2!1sen!2sph!4v1744003288003!5m2!1sen!2sph" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+
+          </iframe>
+        </div>
+        
+      </div>
+
+      <div class="right">
+        <h1>Save this for Donations!</h1>
+        <p><img src="images/bank-account-logo.png" alt="icon">Philippine Savings Bank <br>via 233330001891</p>
+        <div class="bible-verse">
+          <p>Proverbs 19:17: "Whoever is kind to the poor lends to the Lord, and he will reward them for what they have done."</p>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="fContainer">
+    <p>&copy; 2025 Your Website. All rights reserved.</p>
+  </div>
+</footer>
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const data = JSON.parse(localStorage.getItem("highlightData"));
+  
+    if (data) {
+      // Replace existing content in your layout
+      const container = document.querySelector(".about-content");
+  
+      // Set background image to the float image if needed
+      const imageElement = container.querySelector(".float-image");
+      if (imageElement && data.image) {
+        imageElement.src = data.image;
+      }
+  
+      // Set the title and paragraph
+      container.querySelector("h2").textContent = data.title;
+      container.querySelector("p").textContent = data.paragraph;
+    }
+  });
+  </script>
+</body>
+</html>
